@@ -11,7 +11,7 @@ function handleSubmit(event) {
     .then(function(res) {
         document.getElementById('results').innerHTML = res.message
     }),
-    fetch('https://api.openweathermap.org/data/2.5/weather?zip=90210&appid=6e30485752cf2a3013a66cca6d1829f6&units=metric')
+    fetch('https://api.openweathermap.org/data/2.5/weather?zip=90210&appid=')
     .then(res => res.json())
     .then(function(data) {
         document.getElementById('results').innerHTML += data.main.temp
