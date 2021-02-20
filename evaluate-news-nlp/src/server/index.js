@@ -1,8 +1,11 @@
+const dotenv = require('dotenv');
+dotenv.config();
 var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
 var bodyParser = require('body-parser')
 var cors = require('cors')
+const fetch = require('node-fetch')
 
 const app = express()
 app.use(cors())
@@ -22,12 +25,26 @@ app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
 
+app.post('/test', async function (req, res) {
+    const app_key = process.env.API_KEY
+    const apiUrl = `https://api.meaningcloud.com/sentiment-2.1?key=${app_key}&txt=${req.body.text}&lang=en&txtf=plain`
+    let response = await fetch(apiUrl)
+    let data = await response.json()
 
-app.get('/test', function (req, res) {
-  res.send(mockAPIResponse)
+    const evaluation = {}
+    evaluation.polarity = data.score_tag
+    evaluation.agreement = data.agreement
+    evaluation.irony = data.irony
+    evaluation.subjectivity = data.subjectivity
+    evaluation.confidence = data.confidence
+    res.send(evaluation)
+    console.log(apiUrl)
+    console.log(evaluation)
 })
 
 // designates what port the app will listen to for incoming requests
 app.listen(8081, function () {
   console.log('Example app listening on port 8081!')
 })
+
+console.log(`Your API key is ${process.env.API_KEY}`);
