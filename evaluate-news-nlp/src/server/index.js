@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
 
 app.post('/test', async function (req, res) {
     const app_key = process.env.API_KEY
-    const apiUrl = `https://api.meaningcloud.com/sentiment-2.1?key=${app_key}&txt=${req.body.text}&lang=en&txtf=plain`
+    const apiUrl = `https://api.meaningcloud.com/sentiment-2.1?key=${app_key}&url=${req.body.url}&lang=en`
     let response = await fetch(apiUrl)
     let data = await response.json()
 
