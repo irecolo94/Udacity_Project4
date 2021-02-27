@@ -31,4 +31,4 @@ Project uses service workers to make webpage available offline.
 
 ## Deploying
 
-A great step to take with your finished project would be to deploy it! Unfortunately its a bit out of scope for me to explain too much about how to do that here, but checkout [Netlify](https://www.netlify.com/) or [Heroku](https://www.heroku.com/) for some really intuitive free hosting options.
+The next step will be that of deploying the project wiht [Heroku](https://www.heroku.com/) 
