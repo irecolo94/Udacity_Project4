@@ -30,5 +30,4 @@ Set up Jest to test the javascript on the client side
 Project uses service workers to make webpage available offline.
 
 ## Deploying
-
-The next step will be that of deploying the project wiht [Heroku](https://www.heroku.com/) 
+The next step will be that of deploying the project wiht [Heroku](https://www.heroku.com/)
