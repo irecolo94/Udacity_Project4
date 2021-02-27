@@ -19,10 +19,11 @@ function handleSubmit(event) {
           })
           .then(res => res.json())
           .then(function(res) {
-            document.getElementById('confidence').innerHTML = 'confidence:' + res.confidence
-            document.getElementById('polarity').innerHTML = 'polarity:' + res.polarity
-            document.getElementById('agreement').innerHTML = 'agreement:' + res.agreement
-            document.getElementById('subjectivity').innerHTML = 'subjectivity:' + res.subjectivity
+            document.getElementById('restit').innerHTML = '<u>Your results:</u>'
+            document.getElementById('confidence').innerHTML = 'confidence: ' + res.confidence
+            document.getElementById('polarity').innerHTML = 'polarity: ' + res.polarity
+            document.getElementById('agreement').innerHTML = 'agreement: ' + res.agreement
+            document.getElementById('subjectivity').innerHTML = 'subjectivity: ' + res.subjectivity
             document.getElementById('irony').innerHTML = 'irony:' + res.irony
 
              console.log(res)

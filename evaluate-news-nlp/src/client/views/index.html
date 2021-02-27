@@ -12,21 +12,30 @@
             <div class="">
                 Logo
             </div>
+            <div class="title">
+              Natural Language Processing Tool
+            </div>
             <div class="">
                 navigation
             </div>
         </header>
 
         <main>
-            <section>
-                <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
-                </form>
+
+            <section class="desc">
+              <p>With this app you can analize the sentimentality of any text!<br> The app rests on <a href="https://www.meaningcloud.com/developer/sentiment-analysis/doc/2.1/what-is-sentiment-analysis">meaningcloud</a> APIs
+              <br>Try it out! Just insert a URL in the form below, and MAGIC! Your text will be evaluated! </p>
             </section>
 
             <section>
-                <strong>Form Results:</strong>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Insert the URL of your favorite article here">
+                    <input id="sub" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            </section>
+
+            <section class="eval">
+                <strong id="restit">The results will appear here</strong>
                 <div id="polarity"></div>
                 <div id="confidence"></div>
                 <div id="subjectivity"></div>
@@ -37,7 +46,8 @@
         </main>
 
         <footer>
-            <p>This is a footer</p>
+            <p>Front End Web Developement Nanodegree Program</p>
+            <p>Sumbission Date: 02/27/2021</p>
         </footer>
 
     </body>

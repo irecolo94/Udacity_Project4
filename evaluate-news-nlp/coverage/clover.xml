@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1614013935803" clover="3.2.0">
-  <project timestamp="1614013935803" name="All files">
-    <metrics statements="24" coveredstatements="7" conditionals="4" coveredconditionals="1" methods="6" coveredmethods="3" elements="34" coveredelements="11" complexity="0" loc="24" ncloc="24" packages="1" files="4" classes="4"/>
+<coverage generated="1614428694360" clover="3.2.0">
+  <project timestamp="1614428694360" name="All files">
+    <metrics statements="25" coveredstatements="7" conditionals="4" coveredconditionals="1" methods="6" coveredmethods="3" elements="35" coveredelements="11" complexity="0" loc="25" ncloc="25" packages="1" files="4" classes="4"/>
     <file name="cloneArray.js" path="/home/irene/github/Udacity_Project4/evaluate-news-nlp/src/client/js/cloneArray.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="2" count="2" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
     </file>
     <file name="formHandler.js" path="/home/irene/github/Udacity_Project4/evaluate-news-nlp/src/client/js/formHandler.js">
-      <metrics statements="16" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="17" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <line num="2" count="0" type="stmt"/>
       <line num="5" count="0" type="stmt"/>
       <line num="6" count="0" type="stmt"/>
@@ -23,8 +23,9 @@
       <line num="24" count="0" type="stmt"/>
       <line num="25" count="0" type="stmt"/>
       <line num="26" count="0" type="stmt"/>
-      <line num="28" count="0" type="stmt"/>
-      <line num="30" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
     </file>
     <file name="nameChecker.js" path="/home/irene/github/Udacity_Project4/evaluate-news-nlp/src/client/js/nameChecker.js">
       <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>

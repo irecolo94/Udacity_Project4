@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+$font-stack: Questrial, sans-serif;
+
+%border-behav {
+  border: 0px solid inherit;
+  border-radius: 3px;
+  padding: 40px;
+}
+
+.desc {
+  @extend %border-behav;
+  text-align: center;
+  background-color: #e5eaef;
+}
+
 form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
+    @extend %border-behav;
+    background-color: #d5dee6;
+    font: 100% $font-stack;
 }
 
 input {
@@ -9,4 +24,10 @@ input {
     width: 100%;
     line-height: 16px;
     margin: 10px 0;
+    font: 100% $font-stack;
+}
+
+.eval {
+  @extend %border-behav;
+  background-color: #c5d1dc;
 }

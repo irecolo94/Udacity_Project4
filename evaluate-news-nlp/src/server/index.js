@@ -25,17 +25,10 @@ app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
 
-
-// app.get('/test', function (req, res) {
-//   res.send(mockAPIResponse)
-// })
-
-// app.post('/test', (req,res) => {
-//
-// })
+// fetch API:
 
 app.post('/test', async function (req, res) {
-    const app_key = process.env.API_KEY
+    const app_key = process.env.API_KEY  // encript API_key
     const apiUrl = `https://api.meaningcloud.com/sentiment-2.1?key=${app_key}&url=${req.body.url}&lang=en`
     let response = await fetch(apiUrl)
     let data = await response.json()
